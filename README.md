@@ -21,8 +21,8 @@ MotoConnect es una aplicación móvil desarrollada en Flutter que tiene como obj
 ## Tecnologías utilizadas
 
 - **Flutter:** Desarrollo de la aplicación móvil multiplataforma.
-- **Firebase:** Almacenamiento de datos en tiempo real, autenticación de usuarios y gestión de chats.
-- **Google Maps API:** Integración para la visualización de rutas recomendadas y eventos en el mapa.
+- **Firebase:** Autenticación de usuarios.
+- **Google Maps API:** Integración para la visualización de rutas recomendadas.
 
 ## Instalación
 

@@ -1,0 +1,361 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.motoconnect_alpha"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+8-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:4:5-80
+11-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:4:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:5:5-78
+12-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+13-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:6:5-85
+13-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:6:22-82
+14    <!--
+15         Required to query activities that can process text, see:
+16         https://developer.android.com/training/package-visibility?hl=en and
+17         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+18
+19         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+20    -->
+21    <queries>
+21-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:45:5-50:15
+22        <intent>
+22-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:46:9-49:18
+23            <action android:name="android.intent.action.PROCESS_TEXT" />
+23-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:47:13-72
+23-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:47:21-70
+24
+25            <data android:mimeType="text/plain" />
+25-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:48:13-50
+25-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:48:19-48
+26        </intent>
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30    <!-- Include required permissions for Google Maps API to run. -->
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+31-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+32    <uses-permission android:name="android.permission.INTERNET" />
+32-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+32-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:22-64
+33
+34    <uses-feature
+34-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+35        android:glEsVersion="0x00020000"
+35-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+36        android:required="true" />
+36-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+37
+38    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+38-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\978a2d38538fafab04f173e2ebd02357\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+38-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\978a2d38538fafab04f173e2ebd02357\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+39
+40    <permission
+40-->[androidx.core:core:1.13.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\0e36d7641cfdcecf56e8641d6b83bda8\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+41        android:name="com.example.motoconnect_alpha.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.13.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\0e36d7641cfdcecf56e8641d6b83bda8\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.13.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\0e36d7641cfdcecf56e8641d6b83bda8\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.example.motoconnect_alpha.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.13.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\0e36d7641cfdcecf56e8641d6b83bda8\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.13.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\0e36d7641cfdcecf56e8641d6b83bda8\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+45
+46    <application
+47        android:name="android.app.Application"
+47-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:9:9-42
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.13.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\0e36d7641cfdcecf56e8641d6b83bda8\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+49        android:icon="@mipmap/icono"
+49-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:10:9-37
+50        android:label="motoconnect_alpha" >
+50-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:8:9-42
+51        <meta-data
+51-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:11:9-12:70
+52            android:name="com.google.android.geo.API_KEY"
+52-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:11:20-65
+53            android:value="AIzaSyAKgJ6GXXEbaYZsog78LLrIj0qKtyN868g" />
+53-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:12:13-68
+54
+55        <activity
+55-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:13:9-33:20
+56            android:name="com.example.motoconnect_alpha.MainActivity"
+56-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:14:13-41
+57            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+57-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:18:13-163
+58            android:exported="true"
+58-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:15:13-36
+59            android:hardwareAccelerated="true"
+59-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:19:13-47
+60            android:launchMode="singleTop"
+60-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:16:13-43
+61            android:theme="@style/LaunchTheme"
+61-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:17:13-47
+62            android:windowSoftInputMode="adjustResize" >
+62-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:20:13-55
+63
+64            <!--
+65                 Specifies an Android theme to apply to this Activity as soon as
+66                 the Android process has started. This theme is visible to the user
+67                 while the Flutter UI initializes. After that, this theme continues
+68                 to determine the Window background behind the Flutter UI.
+69            -->
+70            <meta-data
+70-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:25:13-28:17
+71                android:name="io.flutter.embedding.android.NormalTheme"
+71-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:26:15-70
+72                android:resource="@style/NormalTheme" />
+72-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:27:15-52
+73
+74            <intent-filter>
+74-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:29:13-32:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:30:17-68
+75-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:30:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:31:17-76
+77-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:31:27-74
+78            </intent-filter>
+79        </activity>
+80        <!--
+81             Don't delete the meta-data below.
+82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+83        -->
+84        <meta-data
+84-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:36:9-38:33
+85            android:name="flutterEmbedding"
+85-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:37:13-44
+86            android:value="2" />
+86-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:38:13-30
+87
+88        <service
+88-->[:firebase_auth] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-4.19.5\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+89            android:name="com.google.firebase.components.ComponentDiscoveryService"
+89-->[:firebase_auth] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-4.19.5\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+90            android:directBootAware="true"
+90-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
+91            android:exported="false" >
+91-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
+92            <meta-data
+92-->[:firebase_auth] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-4.19.5\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+93-->[:firebase_auth] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-4.19.5\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_auth] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-4.19.5\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+95            <meta-data
+95-->[:firebase_core] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-2.31.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+96                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+96-->[:firebase_core] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-2.31.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[:firebase_core] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-2.31.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+99                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+99-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\55940eed2e08474aaed9f1f789426c0f\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
+102                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+102-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\55940eed2e08474aaed9f1f789426c0f\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\55940eed2e08474aaed9f1f789426c0f\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
+105                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+105-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
+107        </service>
+108        <service
+108-->[:geolocator_android] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
+109            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+109-->[:geolocator_android] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
+110            android:enabled="true"
+110-->[:geolocator_android] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
+111            android:exported="false"
+111-->[:geolocator_android] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+112            android:foregroundServiceType="location" /> <!-- Needs to be explicitly declared on P+ -->
+112-->[:geolocator_android] C:\Users\guilleDCM\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
+113        <uses-library
+113-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+114            android:name="org.apache.http.legacy"
+114-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+115            android:required="false" />
+115-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\a6a445dc81b0c8136c600ad05c7d480a\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+116
+117        <activity
+117-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+118            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+118-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+119            android:excludeFromRecents="true"
+119-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+120            android:exported="true"
+120-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+121            android:launchMode="singleTask"
+121-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+122-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+123            <intent-filter>
+123-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+124                <action android:name="android.intent.action.VIEW" />
+124-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+124-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+126-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+127                <category android:name="android.intent.category.BROWSABLE" />
+127-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+127-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+128
+129                <data
+129-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:48:13-50
+130                    android:host="firebase.auth"
+131                    android:path="/"
+132                    android:scheme="genericidp" />
+133            </intent-filter>
+134        </activity>
+135        <activity
+135-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+136            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+136-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+137            android:excludeFromRecents="true"
+137-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+138            android:exported="true"
+138-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+139            android:launchMode="singleTask"
+139-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+140-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+141            <intent-filter>
+141-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+142-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+144-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+145                <category android:name="android.intent.category.BROWSABLE" />
+145-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+145-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\guilleDCM\.gradle\caches\transforms-3\c30b9e7e5fbd01933f880b2cea49fb86\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+146
+147                <data
+147-->C:\Users\guilleDCM\Desktop\TFG\motoconnect_alpha\android\app\src\main\AndroidManifest.xml:48:13-50
+148                    android:host="firebase.auth"
+149                    android:path="/"
+150                    android:scheme="recaptcha" />
+151            </intent-filter>
+152        </activity>
+153        <activity
+153-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\270daea247100912774e8f07ddee898f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+154            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+154-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\270daea247100912774e8f07ddee898f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\270daea247100912774e8f07ddee898f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+156            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+156-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\270daea247100912774e8f07ddee898f\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+157
+158        <provider
+158-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+159            android:name="com.google.firebase.provider.FirebaseInitProvider"
+159-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+160            android:authorities="com.example.motoconnect_alpha.firebaseinitprovider"
+160-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+161            android:directBootAware="true"
+161-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+162            android:exported="false"
+162-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+163            android:initOrder="100" />
+163-->[com.google.firebase:firebase-common:20.4.3] C:\Users\guilleDCM\.gradle\caches\transforms-3\6f9cca13550d911c1165dca93adabeb1\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
+164
+165        <uses-library
+165-->[androidx.window:window:1.0.0-beta04] C:\Users\guilleDCM\.gradle\caches\transforms-3\05afbc50c9d5c51966c5374f153362bd\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+166            android:name="androidx.window.extensions"
+166-->[androidx.window:window:1.0.0-beta04] C:\Users\guilleDCM\.gradle\caches\transforms-3\05afbc50c9d5c51966c5374f153362bd\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+167            android:required="false" />
+167-->[androidx.window:window:1.0.0-beta04] C:\Users\guilleDCM\.gradle\caches\transforms-3\05afbc50c9d5c51966c5374f153362bd\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+168        <uses-library
+168-->[androidx.window:window:1.0.0-beta04] C:\Users\guilleDCM\.gradle\caches\transforms-3\05afbc50c9d5c51966c5374f153362bd\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+169            android:name="androidx.window.sidecar"
+169-->[androidx.window:window:1.0.0-beta04] C:\Users\guilleDCM\.gradle\caches\transforms-3\05afbc50c9d5c51966c5374f153362bd\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+170            android:required="false" />
+170-->[androidx.window:window:1.0.0-beta04] C:\Users\guilleDCM\.gradle\caches\transforms-3\05afbc50c9d5c51966c5374f153362bd\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+171
+172        <meta-data
+172-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\323c2018d8dd266be6a9369700ae43d5\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+173            android:name="com.google.android.gms.version"
+173-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\323c2018d8dd266be6a9369700ae43d5\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+174            android:value="@integer/google_play_services_version" />
+174-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\323c2018d8dd266be6a9369700ae43d5\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+175
+176        <provider
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+177            android:name="androidx.startup.InitializationProvider"
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+178            android:authorities="com.example.motoconnect_alpha.androidx-startup"
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+179            android:exported="false" >
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+180            <meta-data
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+181                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+182                android:value="androidx.startup" />
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+183        </provider>
+184
+185        <receiver
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+186            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+187            android:directBootAware="false"
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+188            android:enabled="true"
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+189            android:exported="true"
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+190            android:permission="android.permission.DUMP" >
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+191            <intent-filter>
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+192                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+193            </intent-filter>
+194            <intent-filter>
+194-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+195                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+196            </intent-filter>
+197            <intent-filter>
+197-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+198                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+198-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+198-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+199            </intent-filter>
+200            <intent-filter>
+200-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+201                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+201-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+201-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\guilleDCM\.gradle\caches\transforms-3\6dcdd3425f24ace7570b060716b49072\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+202            </intent-filter>
+203        </receiver>
+204    </application>
+205
+206</manifest>

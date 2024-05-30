@@ -12,7 +12,6 @@ MotoConnect es una aplicación móvil desarrollada en Flutter que tiene como obj
 ### Chats
 - **Conversaciones en tiempo real:** Interactúa con otros usuarios de MotoConnect a través de chats en tiempo real.
 - **Grupos de interés:** Únete a grupos de chat según tus intereses, ya sea sobre mecánica, rutas escénicas o eventos locales.
-- **Mensajería privada:** Mantén conversaciones privadas con otros usuarios para planificar salidas en moto o intercambiar consejos.
 
 ### Rutas recomendadas
 - **Personalización:** Selecciona tu tipo de moto y MotoConnect te recomendará rutas adaptadas a sus características.

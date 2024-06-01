@@ -77,7 +77,7 @@ class _MotorcycleScreenState extends State<MotorcycleScreen> {
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
                       onTap: () {
-                        saveMotorcycleToDatabase(motorcycles[index]);
+                        showConfirmationDialog(context, motorcycles[index]);
                       },
                       child: Card(
                         elevation: 4,
@@ -218,6 +218,33 @@ class _MotorcycleScreenState extends State<MotorcycleScreen> {
     } else {
       throw Exception('Error al obtener el ID de la moto desde el servidor');
     }
+  }
+
+  void showConfirmationDialog(BuildContext context, Motorcycle motorcycle) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Confirmación'),
+          content: Text('¿Estás seguro de que deseas seleccionar esta moto?'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('No'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                saveMotorcycleToDatabase(motorcycle);
+              },
+              child: Text('Sí'),
+            ),
+          ],
+        );
+      },
+    );
   }
 }
 
